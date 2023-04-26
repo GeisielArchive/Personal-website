@@ -14,13 +14,19 @@
 
 /*<!-- Title -->*/
 .title {
-    background-color: var(--color-two);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #313b3f;
+    height: 100vh;
 }
 
 /*Menu*/
 .menu {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    width: 60%;
 }
 
 .nav {
@@ -29,8 +35,8 @@
 }
 
 .nav-logo {
-    padding-left: 2rem;
     text-decoration: none;
+    padding-left: 2rem;
 }
 
 .nav-li {
@@ -47,17 +53,22 @@
 }
 
 .nav-item {
-    padding-left: 1.3rem;
+    padding-left: 1rem;
 }
 
 /*Perfil*/
 .perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: inherit;
     text-align: center;
-    padding: 5rem 0rem 5rem 0rem;
+    padding-top: 5rem;
 }
 
 .perfil-img {
     width: 150px;
+    margin-bottom: 1rem;
     border-radius: 50%;
 }
 
@@ -115,7 +126,7 @@
     width: 50%;
     margin: 100px auto 0 auto;
     text-align: left;
-    row-gap: 2rem;
+    gap: 2rem;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
 }
@@ -192,4 +203,91 @@
 .main-footer a {
     margin-left: 20px;
     margin-left: 20px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .menu {
+        width: 100%;
+    }
+
+    .title {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .grid-skills {
+        width: 80%;
+    }
+
+    .img-skills {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .menu {
+        width: 100%;
+    }
+
+    .title {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .perfil-name {
+        font-size: 3rem;
+    }
+    
+    .perfil-name-h2 {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+    .grid-skills {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        width: 80%;
+
+        justify-items: center;
+        text-align: center;
+        font-size: 1rem; 
+    }
+
+    .contact-me {
+        padding-bottom: 5rem;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        text-align: center;
+    }
+    .nav-li {
+        justify-content: center;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .perfil-name {
+        font-size: 1.5rem;
+    }
+    
+    .perfil-name-h2 {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    .perfil-name-p {
+        font-size: 0.7rem;
+    }
 }
