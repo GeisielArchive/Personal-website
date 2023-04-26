@@ -1,0 +1,195 @@
+:root   {
+    --color-one: #191b1f;
+    --color-two: #313b3f;
+    --color-three: #c9c9c933;
+    /* font-family: 'Castoro Titling', cursive;
+    font-family: 'Open Sans', sans-serif; */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+/*<!-- Title -->*/
+.title {
+    background-color: var(--color-two);
+}
+
+/*Menu*/
+.menu {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    padding-left: 2rem;
+    text-decoration: none;
+}
+
+.nav-li {
+    font-family: 'Castoro Titling', cursive;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0rem 2rem;
+    text-transform: uppercase;
+}
+
+.nav-li a {
+    text-decoration: none;
+}
+
+.nav-item {
+    padding-left: 1.3rem;
+}
+
+/*Perfil*/
+.perfil {
+    text-align: center;
+    padding: 5rem 0rem 5rem 0rem;
+}
+
+.perfil-img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.perfil-name {
+    font-family: 'Castoro Titling', cursive;
+    font-size: 4rem;
+}
+
+.perfil-name-h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+.perfil-name-p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 2rem 0rem 1.3rem 0rem;
+}
+
+.perfil-btn {
+    border: none;
+    border-radius: 18px;
+    width:  100px;
+    height: 20px;
+    background-color: var(--color-three);
+}
+
+.perfil-btn:hover {
+    background-color: #2b3438;
+}
+
+/*<!-- Resume -->*/
+.skills {
+    background-color: black;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.skills-h2 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.img-skills {
+    width: 180px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.grid-skills {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 50%;
+    margin: 100px auto 0 auto;
+    text-align: left;
+    row-gap: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.grid-skills p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #313b3f;
+    height: 90vh;
+    padding: 1rem 5rem;
+}
+
+.contact-me {
+    color: #66bfbf;
+    font-family: 'Castoro Titling', cursive;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.contact-message-h2 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 4rem;
+}
+
+.contact-message-h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.contact-message-p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+.contact-btn {
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    background-color: var(--color-three);
+}
+
+.contact-btn:hover {
+    background-color: #2b3438;
+}
+
+/*<!-- Footer -->*/
+.main-footer {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-color: black;
+
+
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+}
+
+.main-footer a {
+    margin-left: 20px;
+    margin-left: 20px;
+}
