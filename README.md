@@ -11,7 +11,6 @@
 ## Tech Stack
 - HTML
 - CSS
-- JS
 
 
 ## Authors
